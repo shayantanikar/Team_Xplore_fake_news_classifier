@@ -31,8 +31,7 @@ def predict():
     prob = model.predict_proba([var])
 
     
-    return render_template('hackanova.html', 
-                               result = "{}".format(prediction[0])
+    return render_template('hackanova.html',result = "{}".format(prediction[0]))
 
 if __name__ == '__main__':
 #Run the application
