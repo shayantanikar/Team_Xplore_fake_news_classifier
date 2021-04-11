@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FAKE NEWS ANALYSIS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="\css\hackanova.css">
+</head>
+<style>
+body{
+    padding: 10px;
+    margin: 15%px;
+}
+header{
+    background-color:#B3B3B3; 
+    background-image: url("news33.JPG") ;
+    background-size: cover;
+    padding: 5px;
+    text-align: center;
+    height:10em;
+}
+h1{
+    color:#f3efef ;
+    text-transform:uppercase;
+    text-align:center;
+}
+h2{
+    text-size: 50px;
+}
+
+img{
+    width:80%;
+    height:20%%;
+    border: #000000 6px solid;
+    margin: 15px;
+}
+.left{
+    width:200px ;
+    height: 300vh;
+    background-color:#0387df;
+    margin:0 auto;
+    padding:30px;
+    display:inline-block;
+    float: left;
+    
+}
+.right{
+    width: 720px;
+    text-size-adjust: 120%;
+}
+section{
+	width:30%;
+	margin-right: 30%;
+	display:inline-block;
+	float:left;
+}
+
+
+</style>
+<body>
+	<header>
+		<h1>FAKE NEWS ANALYSIS</h1>
+	</header>
+	<main>
+			
+		<aside class="right" style="text-align:center;margin-left:400px;margin-top:100px">
+            <form action = “{{url_for(‘view.py’)}}” method =”POST”>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label" style="font-size:50px;">Enter Headline</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Type headline to check for">
+                </div>
+                <div class="form-group" >
+					<input onclick="myFunction()" class="btn btn-primary" type="submit" value="Result" style="padding-left:80px;padding-right:80px;">
+				</div>
+
+                <div id ="result" style="color:red">
+					{{result}}
+				</div>
+            </form>
+        </aside>
+	</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js">
+    
+</body>
+</html>
