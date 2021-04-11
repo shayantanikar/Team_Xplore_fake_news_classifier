@@ -1,5 +1,10 @@
 # Team_Xplore_fake_news_classifier
 Built in an Hackathon organized by DTU
+by: 
+KUSHAL GUHA
+ARIJIT GOSWAMI
+SULAGNA DUTTA
+SHAYANTANI KAR
 
 # Fake News Detection
 
